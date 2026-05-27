@@ -463,104 +463,10 @@ footer p{font-size:11px;color:#555;letter-spacing:0.08em}
 }
 
 
-/* ── INSTAGRAM FEED ── */
-.instagram-section{
-  background:#fff;
-  padding:80px 80px 60px;
-}
-.instagram-section .sec-label{margin-bottom:12px}
-.instagram-header{
-  display:flex;justify-content:space-between;align-items:flex-end;
-  margin-bottom:36px;flex-wrap:wrap;gap:16px;
-}
-.instagram-header h2{
-  font-family:'Playfair Display',serif;
-  font-size:clamp(28px,3vw,42px);font-weight:400;color:var(--charcoal);
-  margin-top:8px;
-}
-.instagram-handle{
-  display:flex;align-items:center;gap:10px;
-  text-decoration:none;color:var(--green);
-  font-size:13px;font-weight:500;letter-spacing:0.1em;
-  border:1px solid var(--green);padding:10px 20px;
-  transition:all .2s;white-space:nowrap;
-}
-.instagram-handle:hover{background:var(--green);color:#fff}
-.instagram-handle svg{width:16px;height:16px}
-
-.insta-grid{
-  display:grid;
-  grid-template-columns:repeat(6,1fr);
-  gap:4px;
-}
-.insta-item{
-  aspect-ratio:1;
-  background:var(--green-light);
-  position:relative;overflow:hidden;cursor:pointer;
-}
-.insta-item a{display:block;width:100%;height:100%}
-.insta-placeholder{
-  width:100%;height:100%;
-  display:flex;flex-direction:column;
-  align-items:center;justify-content:center;gap:8px;
-  background:var(--cream);
-  transition:background .2s;
-}
-.insta-placeholder:hover{background:var(--green-light)}
-.insta-placeholder svg{width:28px;height:28px;stroke:var(--green);opacity:.4}
-.insta-placeholder span{
-  font-size:9px;letter-spacing:0.2em;text-transform:uppercase;
-  color:var(--mid);opacity:.6;
-}
-.insta-store-name{
-  font-size:10px;font-weight:500;color:var(--green);
-  opacity:.8;text-align:center;padding:0 4px;
-}
-.insta-note{
-  text-align:center;margin-top:20px;
-  font-size:12px;color:var(--mid);
-}
-.insta-note a{color:var(--green);text-decoration:none;font-weight:500}
-
-/* ── MAPA NO RODAPÉ ── */
-.map-section{
-  position:relative;height:320px;overflow:hidden;cursor:pointer;
-  display:block;text-decoration:none;
-}
-.map-section img{
-  width:100%;height:100%;object-fit:cover;
-  filter:saturate(0.8);transition:filter .3s,transform .3s;
-}
-.map-section:hover img{filter:saturate(1.1);transform:scale(1.02)}
-.map-overlay{
-  position:absolute;inset:0;
-  background:linear-gradient(to bottom, transparent 40%, rgba(0,0,0,0.65) 100%);
-  display:flex;flex-direction:column;
-  align-items:center;justify-content:flex-end;
-  padding:36px;
-}
-.map-pin{
-  display:flex;align-items:center;gap:12px;
-  background:#fff;padding:14px 28px;margin-bottom:16px;
-  box-shadow:0 4px 24px rgba(0,0,0,0.2);
-  transition:transform .2s;
-}
-.map-section:hover .map-pin{transform:translateY(-4px)}
-.map-pin svg{width:20px;height:20px;stroke:var(--green);flex-shrink:0}
-.map-pin span{font-size:13px;font-weight:500;color:var(--charcoal);letter-spacing:0.05em}
-.map-label{
-  font-size:11px;letter-spacing:0.25em;text-transform:uppercase;
-  color:rgba(255,255,255,0.7);
-}
-
 @media(max-width:768px){
   .instagram-section{padding:60px 20px 40px}
   .insta-grid{grid-template-columns:repeat(3,1fr);gap:3px}
-  .map-section{height:240px}
-  .map-overlay{padding:24px}
-  .map-pin{padding:12px 20px}
-  .map-pin span{font-size:12px}
-}
+  }
 @media(max-width:480px){
   .insta-grid{grid-template-columns:repeat(3,1fr)}
 }
@@ -714,118 +620,6 @@ Em mais de 20 anos, consolidou-se como o melhor centro de compras e serviços de
 </section>
 
 
-<!-- INSTAGRAM -->
-<div class="instagram-section">
-  <div class="instagram-header">
-    <div>
-      <p class="sec-label">Siga as nossas lojas</p>
-      <h2>No Instagram</h2>
-    </div>
-    <a href="https://instagram.com/" target="_blank" class="instagram-handle">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
-      Ver perfis
-    </a>
-  </div>
-  <div class="insta-grid">
-    <div class="insta-item">
-      <a href="https://instagram.com/absolutaalphaville" target="_blank" title="@absolutaalphaville">
-        <div class="insta-placeholder">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
-          <span class="insta-store-name">Absoluta Semijoias</span>
-          <span>@absolutaalphaville</span>
-        </div>
-      </a>
-    </div>
-    <div class="insta-item">
-      <a href="https://instagram.com/bienvinos" target="_blank" title="@bienvinos">
-        <div class="insta-placeholder">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
-          <span class="insta-store-name">BienVinos</span>
-          <span>@bienvinos</span>
-        </div>
-      </a>
-    </div>
-    <div class="insta-item">
-      <a href="https://instagram.com/cavoktecnologia" target="_blank" title="@cavoktecnologia">
-        <div class="insta-placeholder">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
-          <span class="insta-store-name">Cavok</span>
-          <span>@cavoktecnologia</span>
-        </div>
-      </a>
-    </div>
-    <div class="insta-item">
-      <a href="https://instagram.com/emporioessenzapinhais" target="_blank" title="@emporioessenzapinhais">
-        <div class="insta-placeholder">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
-          <span class="insta-store-name">Essenza</span>
-          <span>@emporioessenzapinhais</span>
-        </div>
-      </a>
-    </div>
-    <div class="insta-item">
-      <a href="https://instagram.com/gruponaussatpiscinas" target="_blank" title="@gruponaussatpiscinas">
-        <div class="insta-placeholder">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
-          <span class="insta-store-name">Naussat</span>
-          <span>@gruponaussatpiscinas</span>
-        </div>
-      </a>
-    </div>
-    <div class="insta-item">
-      <a href="https://instagram.com/lavessi_modafeminina" target="_blank" title="@lavessi_modafeminina">
-        <div class="insta-placeholder">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
-          <span class="insta-store-name">Lavessi</span>
-          <span>@lavessi_modafeminina</span>
-        </div>
-      </a>
-    </div>
-    <div class="insta-item">
-      <a href="https://instagram.com/lisdelunemodaintima" target="_blank" title="@lisdelunemodaintima">
-        <div class="insta-placeholder">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
-          <span class="insta-store-name">Lis de Lune</span>
-          <span>@lisdelunemodaintima</span>
-        </div>
-      </a>
-    </div>
-    <div class="insta-item">
-      <a href="https://instagram.com/mappiodonto" target="_blank" title="@mappiodonto">
-        <div class="insta-placeholder">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
-          <span class="insta-store-name">Mappi</span>
-          <span>@mappiodonto</span>
-        </div>
-      </a>
-    </div>
-    <div class="insta-item">
-      <a href="https://instagram.com/shoes_compaany" target="_blank" title="@shoes_compaany">
-        <div class="insta-placeholder">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
-          <span class="insta-store-name">Shoes Co.</span>
-          <span>@shoes_compaany</span>
-        </div>
-      </a>
-    </div>
-  </div>
-  <p class="insta-note">Clique em qualquer card para visitar o Instagram da loja ↗</p>
-</div>
-
-<!-- MAPA -->
-<a class="map-section" href="https://maps.google.com/?q=Rua+Taquari+81+Alphaville+Graciosa+Pinhais+PR" target="_blank">
-  <img src="https://maps.googleapis.com/maps/api/staticmap?center=-25.3965,-49.1504&zoom=16&size=1200x320&scale=2&maptype=roadmap&markers=color:green%7C-25.3965,-49.1504&style=feature:poi|visibility:off&style=feature:transit|visibility:off" 
-       alt="Localização do Shopping Alphamall Graciosa"
-       onerror="this.src='https://via.placeholder.com/1200x320/2A6B3C/ffffff?text=Rua+Taquari%2C+81+%E2%80%94+Alphaville+Graciosa%2C+Pinhais'">
-  <div class="map-overlay">
-    <div class="map-pin">
-      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-      <span>Rua Taquari, 81 — Alphaville Graciosa, Pinhais</span>
-    </div>
-    <span class="map-label">Clique para abrir no Google Maps</span>
-  </div>
-</a>
-
 <!-- INFO -->
 <div class="info-strip" id="info">
   <div class="info-block">
@@ -878,8 +672,8 @@ const STORES = [
   {num:"08",name:"Empório Essenza",desc:"Cosméticos e aromas artesanais inspirados nos vinhedos da Serra Gaúcha. Perfumaria natural, cosméticos e presentes.",segments:["presentes","outros"],subsegments:["beleza"],instagram:"emporioessenzapinhais",site:null,whatsapp:"41992683838"},
   {num:"12",name:"Essencial Decoração e Presentes",desc:"Decoração de interiores, objetos autorais e presentes para todas as ocasiões.",segments:["decoracao","presentes"],subsegments:[],instagram:null,site:null,whatsapp:null},
   {num:"06",name:"Gaia Store",desc:"Moda feminina com identidade autoral, peças exclusivas e tecidos nobres.",segments:["vestuario"],subsegments:["feminino"],instagram:null,site:null,whatsapp:null},
-  {num:"01",name:"Grudi Brinquedos",desc:"Brinquedos, games e artigos para crianças de todas as idades.",segments:["presentes"],subsegments:["infantil"],instagram:null,site:null,whatsapp:null},
-  {num:"11",name:"Iam Store",desc:"Moda feminina com peças atemporais e um olhar editorial único.",segments:["vestuario"],subsegments:["feminino"],instagram:null,site:null,whatsapp:null},
+  {num:"01",name:"Grudi Toys & Tals",desc:"Ampla variedade de brinquedos, pelúcias e jogos educativos. Marcas como Hasbro, Mattel, Fun, Lego, Copag, Estrela, Grow, Candide, Sunny e muito mais.",segments:["presentes"],subsegments:["infantil"],instagram:"MEUGRUDI",site:null,whatsapp:"41992942731"},
+  {num:"11",name:"Iam Store",desc:"Somos muito mais do que uma loja de roupas feminina — somos um espaço onde cada mulher pode se reconhecer e se expressar. Mais do que roupas, acreditamos em identidade, atitude e liberdade.",segments:["vestuario"],subsegments:["feminino"],instagram:"iamstoreoficial",site:"https://www.iamstore.com.br",whatsapp:"41992282332"},
   {num:"13",name:"Isabô Sneakers e Presentes",desc:"Sneakers exclusivos, streetwear e presentes criativos com curadoria especial.",segments:["vestuario","presentes"],subsegments:["feminino","masculino"],instagram:null,site:null,whatsapp:null},
   {num:"03",name:"Lavessi Moda Feminina",desc:"Moda feminina versátil com looks para todas as ocasiões. Marcas como Anselmi, Flor de Liz, Biamar e outras.",segments:["vestuario"],subsegments:["feminino"],instagram:"lavessi_modafeminina",site:"https://lavessi.com.br",whatsapp:"41996654083"},
   {num:"20",name:"Lis de Lune Moda Íntima",desc:"Multimarcas de moda íntima e fitness para público feminino, masculino e infantil. Atendimento personalizado em ambiente acolhedor.",segments:["vestuario"],subsegments:["intimo","feminino","masculino","infantil"],instagram:"lisdelunemodaintima",site:"https://www.lisdelune.com.br",whatsapp:"41991833666"},
